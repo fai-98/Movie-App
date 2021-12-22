@@ -148,10 +148,10 @@ main {
 .movie:hover .info {
   width: 85%;
 }
-
+/* 
 .movie:hover {
   transform: translateY(-5px) scale(1.05);
-}
+} */
 .poster {
   position: relative;
 }

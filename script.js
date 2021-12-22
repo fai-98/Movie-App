@@ -63,30 +63,18 @@ const showMoviesInDOM = (movies) => {
   fetchReviews(reviewBtn, movies);
 };
 
-// Fetching movies
-const getMovies = async (moviesURL) => {
-  let res, data;
-  try {
-    res = await fetch(moviesURL);
-    data = await res.json();
-  } catch (err) {
-    console.log("%$$%$%$%$%$ ::: " + err);
-  }
-  showMoviesInDOM(data.results);
-};
-
 getMovies(moviesURL);
 
-// Event listener
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+// // Event listener
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  if ((query.value !== null) & (query.value !== "")) {
-    getMovies(searchURL + `${query.value}`);
-  }
+//   if ((query.value !== null) & (query.value !== "")) {
+//     getMovies(searchURL + `${query.value}`);
+//   }
 
-  query.value = "";
-});
+//   query.value = "";
+// });
 
 // Fetching Reviews by Movie ID
 function fetchReviews(reviewBtns, movies) {
