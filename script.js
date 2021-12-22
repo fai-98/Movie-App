@@ -3,12 +3,6 @@ const moviesURL =
 
 const posterURL = "https://image.tmdb.org/t/p/w500";
 
-const searchURL =
-  "https://api.themoviedb.org/3/search/movie?api_key=1ceba6e7e89a5257b3c318819850da51&query=";
-
-const trendingURL =
-  "https://api.themoviedb.org/3/trending/all/day?api_key=1ceba6e7e89a5257b3c318819850da51";
-
 const hero = document.getElementById("hero");
 const form = document.querySelector("form");
 const query = document.querySelector("input");
